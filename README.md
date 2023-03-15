@@ -49,6 +49,22 @@ If error bind is already in use, or address already being used
 * `kill id`
 
 
-## Results
+# Results
 
+## Plots
+
+## Analysing the plot
+
+What is the effect of the PID according to the plots, how each part of the PID affects the control command?
+The answer explains the role of the different parts of the PID.
+
+## Questions
+
+ - How would you design a way to automatically tune the PID parameters?
+ 
+    - First I would a Use the Twiddling algorithm to vary the PID gains such that error minimi
+    - 
+ 
+ -
+This is an open question, the coherence and justification of the answer is valued.
 
