@@ -50,8 +50,24 @@ If error bind is already in use, or address already being used
 
 
 # Results
+There are two parts of the PID design. First is the development of PID class as shown in `pid_controller.cpp` and `pid_controller.h`. This is used for both the Steering and Throttle Control. Second part consist of the error computations for steer and throttle. 
 
-## Plots
+The steering error in two steps:
+    
+ - The target waypoint/index on the trajectory which has the minimum distance from ego vehicle is computed.
+    
+ - The difference between vehicle yaw and the angle from target point and ego point is given as steer error.
+
+For throttle error, the difference between desired velocity and current velocity is computed. The desired velocity is found using the same target index (closest) as before. 
+
+Lastly, numerous values of PID gains are guessed and tried. The repositories contains a few plots in `/project/results`.
+
+## Plots and Videos
+
+https://user-images.githubusercontent.com/16174913/225457456-7612c1b6-77c8-47bc-a0da-bfbf48c5072c.mp4
+
+
+
 
 ## Analysing the plot
 
@@ -67,4 +83,7 @@ The answer explains the role of the different parts of the PID.
  
  -
 This is an open question, the coherence and justification of the answer is valued.
+
+- PID controller is a model free controller, i.e. it does not use a model of the car. Could you explain the pros and cons of this type of controller?
+Find at least 2 pros and cons for model free versus model based.
 
