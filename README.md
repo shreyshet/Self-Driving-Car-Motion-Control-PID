@@ -75,7 +75,7 @@ Following values have proven the below results, for Steering, `Kp = .4, Ki = .00
 *Plot for Throttle Error (blue), Throttle Control Input (orange), Brake Control Input*
 
 
-A small video shows the utput in CARLA simulator. The complete video can be found here ![youtubelink](https://youtu.be/f0r3q2EoyhE).
+A small video shows the utput in CARLA simulator. The complete video can be found [here](https://www.youtube.com/watch?v=f0r3q2EoyhE).
 
 https://user-images.githubusercontent.com/16174913/225457456-7612c1b6-77c8-47bc-a0da-bfbf48c5072c.mp4
 
