@@ -301,9 +301,9 @@ int main ()
           /**
           * TODO (step 3): compute the steer error (error_steer) from the position and the desired trajectory
           **/
-          # Below algorithm finds the steering error in two steps
-		  # 1. The target waypoint/index on the trajectory which has the minimum distance from ego vehicle is computed
-		  # 2. The difference between vehicle yaw and the angle from target point and ego point is given as steer error
+          // Below algorithm finds the steering error in two steps
+	  // 1. The target waypoint/index on the trajectory which has the minimum distance from ego vehicle is computed
+    	  // 2. The difference between vehicle yaw and the angle from target point and ego point is given as steer error
 			
           double min_dist = 1000000.0;
           int closest_idx = 0;
@@ -351,8 +351,8 @@ int main ()
           **/
           // modify the following line for step 2
           
-          # Using the same target index (closest), the desired velocity is found. 
-		  # This is subtracted from current velocity to get throttle error 
+          // Using the same target index (closest), the desired velocity is found. 
+	  // This is subtracted from current velocity to get throttle error 
 		  error_throttle = v_points[closest_idx] - velocity;
 
 
